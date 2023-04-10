@@ -6,6 +6,7 @@ export default {
   argTypes: {
     text: { control: 'text' },
     isDisabled: { control: 'boolean' },
+    isLoading: { control: 'boolean' },
     shadow: { control: 'boolean' },
     size: {
       control: { type: 'select', options: ['small', 'medium', 'large'] },
@@ -64,6 +65,16 @@ textDisabledButton.args = {
   type: 'text',
 };
 
+export const isLoadingButton = Template.bind({});
+isLoadingButton.args = {
+  text: 'Default',
+  backgroundColor: 'transparent',
+  shadow: true,
+  isLoading: true,
+  textColor: 'default',
+  type: 'text',
+};
+
 // export const disableShadow = Template.bind({});
 // disableShadow.args = {
 //   text: 'Default',
@@ -81,7 +92,7 @@ startIconButton.args = {
   startIcon: true,
   textColor: 'white',
   shadow: true,
-  size:'smaill',
+  size:'small',
 };
 export const endIconButton = Template.bind({});
 endIconButton.args = {

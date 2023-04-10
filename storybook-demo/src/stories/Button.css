@@ -119,3 +119,8 @@
 .bg-danger {
   background-color: #d32f2f;
 }
+
+.loading {
+  color: #9e9e9e;
+  margin-left: 0.5rem;
+}

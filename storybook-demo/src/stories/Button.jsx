@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import '../stories/Button.css';
 import { buttonTypes, buttonVariants, buttonSizes } from '../stories/constants.js';
 import { AiOutlineHome } from 'react-icons/ai';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 
 
   
@@ -10,6 +12,7 @@ const Button = (props) => {
   const {
     text,
     isDisabled,
+    isLoading,
     type,
     size,
     backgroundColor,
@@ -44,6 +47,9 @@ const Button = (props) => {
       {text}
       {endIcon && (
         <AiOutlineHome class="icon-end" color="#FFF"/>
+      )}
+      {isLoading && (
+        <CircularProgress class="loading" size="1rem"/>
       )}
     </button>
   );
