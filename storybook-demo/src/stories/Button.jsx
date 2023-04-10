@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import '../stories/Button.css';
 import { buttonTypes, buttonVariants, buttonSizes } from '../stories/constants.js';
 import { AiOutlineHome } from 'react-icons/ai';
+import { CircularProgress } from '@mui/material';
 
 
   
@@ -10,6 +11,7 @@ const Button = (props) => {
   const {
     text,
     isDisabled,
+    isLoading,
     type,
     size,
     backgroundColor,
@@ -37,6 +39,8 @@ const Button = (props) => {
       ].join(' ')}
       disabled={isDisabled}
       {...props}
+      loading={isLoading}
+      {...props}
     >
       {startIcon && (
         <AiOutlineHome class="icon-start" color="#FFF"/>
@@ -45,6 +49,9 @@ const Button = (props) => {
       {endIcon && (
         <AiOutlineHome class="icon-end" color="#FFF"/>
       )}
+      {isLoading && (
+        <CircularProgress isLoading={true} class="loading" size="1rem" />
+      )}
     </button>
   );
 };
@@ -52,6 +59,7 @@ const Button = (props) => {
 Button.propTypes = {
   text: PropTypes.string,
   isDisabled: PropTypes.bool,
+  isLoading: PropTypes.bool,
   type: PropTypes.oneOf([
     buttonTypes.outline,
     buttonTypes.filled,
