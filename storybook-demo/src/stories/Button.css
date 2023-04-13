@@ -28,7 +28,8 @@
 }
 
 .outline:hover {
-  background-color: rgba(41, 98, 255, 0.1);
+  background-color: #3d5afe!important;
+  color: #FFF;
 }
 
 .text {

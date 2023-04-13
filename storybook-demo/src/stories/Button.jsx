@@ -78,7 +78,6 @@ Button.defaultProps = {
   isDisabled: false,
   type: 'filled',
   variant: 'oval',
-  size: 'medium',
   backgroundColor: 'transparent',
   textColor: 'white',
   shadow:true,
