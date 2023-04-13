@@ -42,14 +42,14 @@ defaultDisabledButton.args = {
 
 export const outlineButton = Template.bind({});
 outlineButton.args = {
-  text: 'Default',
+  text: 'Outline',
   textColor: 'primary',
   type: 'outline',
 };
 
 export const textButton = Template.bind({});
 textButton.args = {
-  text: 'Default',
+  text: 'Text',
   backgroundColor: 'transparent',
   textColor: 'primary',
   shadow: false,
@@ -58,7 +58,7 @@ textButton.args = {
 
 export const textDisabledButton = Template.bind({});
 textDisabledButton.args = {
-  text: 'Disabled',
+  text: 'TextDisabled',
   shadow: false,
   isDisabled: true,
   textColor: 'default',
@@ -67,7 +67,7 @@ textDisabledButton.args = {
 
 export const isLoadingButton = Template.bind({});
 isLoadingButton.args = {
-  text: 'Default',
+  text: 'Loading',
   backgroundColor: 'transparent',
   shadow: true,
   isLoading: true,
@@ -86,7 +86,7 @@ isLoadingButton.args = {
 
 export const startIconButton = Template.bind({});
 startIconButton.args = {
-  text: 'Default',
+  text: 'StartIcon',
   backgroundColor: 'primary',
   type: 'filled',
   startIcon: true,
@@ -96,7 +96,7 @@ startIconButton.args = {
 };
 export const endIconButton = Template.bind({});
 endIconButton.args = {
-  text: 'Default',
+  text: 'EndIcon',
   backgroundColor: 'primary',
   type: 'filled',
   endIcon: true,
@@ -106,7 +106,7 @@ endIconButton.args = {
 
 export const primaryButton = Template.bind({});
 primaryButton.args = {
-  text: 'Default',
+  text: 'Primary',
   backgroundColor: 'primary',
   textColor: 'white',
   shadow: true,
