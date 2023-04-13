@@ -86,7 +86,7 @@ isLoadingButton.args = {
 
 export const startIconButton = Template.bind({});
 startIconButton.args = {
-  text: 'StartIcon',
+  text: 'Starticon',
   backgroundColor: 'primary',
   type: 'filled',
   startIcon: true,
@@ -96,7 +96,7 @@ startIconButton.args = {
 };
 export const endIconButton = Template.bind({});
 endIconButton.args = {
-  text: 'EndIcon',
+  text: 'Endicon',
   backgroundColor: 'primary',
   type: 'filled',
   endIcon: true,
