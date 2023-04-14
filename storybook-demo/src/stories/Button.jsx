@@ -80,7 +80,7 @@ Button.defaultProps = {
   variant: 'oval',
   backgroundColor: 'transparent',
   textColor: 'white',
-  shadow:true,
+  shadow:false,
   size: 'small',
 };
 
