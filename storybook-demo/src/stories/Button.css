@@ -34,7 +34,7 @@
 
 .text {
   color: #3d5afe;
-  background-color: transparent;
+  background-color: transparent!important;
 }
 
 .text:hover {
