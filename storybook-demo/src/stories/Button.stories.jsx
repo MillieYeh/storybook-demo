@@ -28,7 +28,7 @@ defaultButton.args = {
   text: 'Default',
   backgroundColor: 'default',
   textColor: 'default',
-  shadow: true,
+  shadow: false,
 };
 
 export const defaultDisabledButton = Template.bind({});
@@ -45,6 +45,7 @@ outlineButton.args = {
   text: 'Outline',
   textColor: 'primary',
   type: 'outline',
+  shadow: false,
 };
 
 export const textButton = Template.bind({});
